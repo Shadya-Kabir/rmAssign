@@ -1,6 +1,8 @@
 BELOW ARE SAMPLE OUTPUT OF WHAT IS HAPPENING AFTER VARIOUS ADD, POP, CHANGE PRIORITY, ETC ACTIVITIES.  These tests were made to test the basic functionalities of add, pop, length, changePriority functions.  
+
 ****************SAMPLE CALLS THAT WERE MADE**************************
 Data_list = [(10,77),(11,77),()]
+
 storeQ.add(10,77);
 storeQ.add(11,77);
 storeQ.add(12,77);
@@ -26,7 +28,9 @@ storeQ.pop();//this pop is to test what happens when the last value of the highe
 console.log("all priorities are:  "+storeQ.get_all_priorities());
 
 
+
 ***************THE OUTPUT LOOKS LIKE*****************************
+
 After adding value:10 and key:77 the queue is: {"77":[10]}
 After adding value:11 and key:77 the queue is: {"77":[10,11]}
 After adding value:12 and key:77 the queue is: {"77":[10,11,12]}
@@ -65,7 +69,9 @@ After pop the queue is: {"1":[],"2":[30,60,30],"3":[41,42,43,40,30],"4":[20],"9"
 After pop the count is: 14
 all priorities are:  1,2,3,4,9,10,77
 
-**************BELOW IS SAMPLE TESTS TO SEE IF THE ìforEachî FUNCTION ITERATING THROUGH THE ENTIRE storeQ ITEMS CORRECTLY OR NOT (This was tested without a callback(function) parameter******************************************************
+
+**************BELOW IS SAMPLE TESTS TO SEE IF THE ‚ÄúforEach‚Äù FUNCTION ITERATING THROUGH THE ENTIRE storeQ ITEMS CORRECTLY OR NOT (This was tested without a callback(function) parameter******************************************************
+
 storeQ.add(10,77);
 storeQ.add(11,77);
 storeQ.add(12,77);
@@ -134,19 +140,19 @@ A SAMPLE EXPLORATORY SESSION BASED TEST CASE SCENARIO
 Test Charter:  
 Analyze actions of a priority queue, consists with keys(priority) and values by performing add, pop, and change priority, get length actions.  
 Areas:  
-ï	Add items in the priority queue with various data type for values.  Check if it handles them well or not (e.g. integer, negative number, decimal, fraction, undefined value, etc.).  What happens if an user enter decimal, or negative, or undefined value?  
-ï	If keys/priorities are not integer, does it notify the user saying keys have to be an integer.
-ï	Add duplicate keys and test it is handled well
-ï	Add multiple values and priorities in the stack
-ï	Add same priority multiple times to see how itís handled
-ï	Add item with a key and an empty value
-ï	Pop the priority queue randomly and check if itís acting correctly
-ï	What happens when the last value of a key is popped, should the key be deleted as well or not?
-ï	Add duplicate priority to check how it is handled
-ï	Add with empty priority and value to check error handling
-ï	Test the change priority.  E.g. what if the NewPriority already exists in the queue, does it handle it well? Otherwise, does it add a new priority successfully or not?
-ï	For change priority, what if there is multiple matching value found, is it supposed to delete the first one found or delete all the values found?
-ï	Is the length supposed to return the length of the keys or the total length of values of keys?
+‚Ä¢	Add items in the priority queue with various data type for values.  Check if it handles them well or not (e.g. integer, negative number, decimal, fraction, undefined value, etc.).  What happens if an user enter decimal, or negative, or undefined value?  
+‚Ä¢	If keys/priorities are not integer, does it notify the user saying keys have to be an integer.
+‚Ä¢	Add duplicate keys and test it is handled well
+‚Ä¢	Add multiple values and priorities in the stack
+‚Ä¢	Add same priority multiple times to see how it‚Äôs handled
+‚Ä¢	Add item with a key and an empty value
+‚Ä¢	Pop the priority queue randomly and check if it‚Äôs acting correctly
+‚Ä¢	What happens when the last value of a key is popped, should the key be deleted as well or not?
+‚Ä¢	Add duplicate priority to check how it is handled
+‚Ä¢	Add with empty priority and value to check error handling
+‚Ä¢	Test the change priority.  E.g. what if the NewPriority already exists in the queue, does it handle it well? Otherwise, does it add a new priority successfully or not?
+‚Ä¢	For change priority, what if there is multiple matching value found, is it supposed to delete the first one found or delete all the values found?
+‚Ä¢	Is the length supposed to return the length of the keys or the total length of values of keys?
 Test environment:  Check if the application run well in different environments, e.g. Windows, MAC os., etc.
 Start: [ENTER START TIME]
 Tester: [ENTER TESTER NAME]
@@ -154,6 +160,6 @@ Duration:  90-120 min [estimated time]
 Test Design and execution:  Estimated time to spent is 60-70% in this area.
 Bug Investigaton and reporting:  Estimated time to spent is 20-30% in this area.
 Session setup:  5-10% of time
-Testing notes: [To complete this section, some of the questions needed to be answered and the product needed to have some feature completed (e.g. exception handler, etc.).  Also due to time restriction, this part couldnít be completed.]
+Testing notes: [To complete this section, some of the questions needed to be answered and the product needed to have some feature completed (e.g. exception handler, etc.).  Also due to time restriction, this part couldn‚Äôt be completed.]
 Data files:  [ENTER IF THERE IS ANY LOG FILES FOR BUGS]
 Bugs: [ENTER THE BUGS FOUND]
